@@ -71,6 +71,33 @@
       </div>
     </div>
   </div>
+    
+    function addNews(){
+			var newsHeader = document.getElementById("header");
+			var newsShortText = document.getElementById("shortText");
+			var newsText = document.getElementById("newsText");
+			var imagePreview = document.getElementById('user-image');
+			if(newsHeader.value == ""){
+				alert("Вкажіть заголовок статті");
+				return;
+			}
+			if(newsShortText.value == ""){
+				alert("Вкажіть короткий опис статті");
+				return;
+			}
+			if(newsText.value == ""){
+				alert("Вкажіть текст статті");
+				return;
+			}
+			if(imagePreview.src == DEFAULT_PHOTO){
+				alert("Завантажте фото для статті");
+				return;
+			}
+		}
+		function loadPreviewPhoto(event){
+			var imagePreview = document.getElementById('user-image');
+    		imagePreview.src = URL.createObjectURL(event.target.files[0]);
+		}
 
   <footer>Copyright (c) 2017 by Андрюха</footer>
   <script src="js/news.js"></script>
