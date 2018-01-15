@@ -1,0 +1,24 @@
+CACHE MANIFEST
+CACHE:
+index.html
+style.css
+admin.html
+admin.css
+coments.html
+coments.css
+contacts.html
+contacts.css
+news.html
+news.css
+plan.html
+plan.css
+2.jpg
+c2.jpg
+
+css/bootstrap.min.css
+js/bootstrap.min.js
+css/bootstrap.css
+js/bootstrap.js
+
+FALLBACK:
+err404.html
